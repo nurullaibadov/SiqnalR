@@ -1,8 +1,0 @@
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.csproj.AssemblyReference.cache
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.AssemblyInfoInputs.cache
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.AssemblyInfo.cs
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.csproj.CoreCompileInputs.cache
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Backend\UpAllNight\UpAllNight.API\obj\Debug\net8.0\UpAllNight.API.sourcelink.json

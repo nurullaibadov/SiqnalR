@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "j9H8T9SlLR8=",
-  "success": false,
+  "dgSpecHash": "CJ3tvFfTANc=",
+  "success": true,
   "projectFilePath": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ibadn\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
@@ -102,17 +102,5 @@
     "C:\\Users\\ibadn\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ibadn\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1102",
-      "level": "Error",
-      "message": "Unable to find package Microsoft.AspNetCore.SignalR with version (>= 8.0.0)\r\n  - Found 18 version(s) in nuget.org [ Nearest version: 1.2.9 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
-      "projectPath": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
-      "filePath": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
-      "libraryId": "Microsoft.AspNetCore.SignalR",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -1605,7 +1605,10 @@
         },
         "runtime": {
           "bin/placeholder/UpAllNight.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "UpAllNight.Domain/1.0.0": {
         "type": "project",

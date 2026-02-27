@@ -3,6 +3,7 @@ using AspNetCoreRateLimit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using UpAllNight.Infrastructure.Hubs;
 using Serilog.Events;
 using System.Text.Json.Serialization;
 using UpAllNight.API.Hubs;

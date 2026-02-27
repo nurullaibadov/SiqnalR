@@ -3,36 +3,68 @@
   "WorkspaceRootPath": "C:\\Backend\\UpAllNight\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\features\\messages\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\features\\messages\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\features\\notifications\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\features\\notifications\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|c:\\backend\\upallnight\\upallnight.infrastructure\\upallnight.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\upallnight.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|c:\\backend\\upallnight\\upallnight.infrastructure\\services\\inotificationhubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\services\\inotificationhubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|c:\\backend\\upallnight\\upallnight.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|solutionrelative:upallnight.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|c:\\backend\\upallnight\\upallnight.infrastructure\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|c:\\backend\\upallnight\\upallnight.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|solutionrelative:upallnight.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3440C23D-9A90-2687-62FC-F66B108AC273}|UpAllNight.Persistence\\UpAllNight.Persistence.csproj|c:\\backend\\upallnight\\upallnight.persistence\\upallnight.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3440C23D-9A90-2687-62FC-F66B108AC273}|UpAllNight.Persistence\\UpAllNight.Persistence.csproj|solutionrelative:upallnight.persistence\\upallnight.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|c:\\backend\\upallnight\\upallnight.api\\upallnight.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|solutionrelative:upallnight.api\\upallnight.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|c:\\backend\\upallnight\\upallnight.infrastructure\\upallnight.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\upallnight.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|c:\\backend\\upallnight\\upallnight.infrastructure\\services\\realtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\services\\realtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B54F55E-93C0-261D-60C5-8D20EB142F21}|UpAllNight.Domain\\UpAllNight.Domain.csproj|c:\\backend\\upallnight\\upallnight.domain\\upallnight.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B54F55E-93C0-261D-60C5-8D20EB142F21}|UpAllNight.Domain\\UpAllNight.Domain.csproj|solutionrelative:upallnight.domain\\upallnight.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\upallnight.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\upallnight.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B54F55E-93C0-261D-60C5-8D20EB142F21}|UpAllNight.Domain\\UpAllNight.Domain.csproj|c:\\backend\\upallnight\\upallnight.domain\\upallnight.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4B54F55E-93C0-261D-60C5-8D20EB142F21}|UpAllNight.Domain\\UpAllNight.Domain.csproj|solutionrelative:upallnight.domain\\upallnight.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|c:\\backend\\upallnight\\upallnight.api\\upallnight.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|solutionrelative:upallnight.api\\upallnight.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\features\\conversations\\services\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\features\\conversations\\services\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\features\\messages\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\features\\messages\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\interfaces\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\interfaces\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\features\\users\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\features\\users\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|c:\\backend\\upallnight\\upallnight.infrastructure\\services\\realtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\services\\realtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\interfaces\\services\\irealtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\features\\users\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\features\\users\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\interfaces\\services\\ichatnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\interfaces\\services\\ichatnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,16 +103,8 @@
       "RelativeMoniker": "D:0:0:{C1CD859F-B8D7-E46B-765E-892AAC21CA39}|UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj|solutionrelative:upallnight.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|c:\\backend\\upallnight\\upallnight.application\\validators\\registervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE56DB18-99B0-29BC-27BC-4C9F39530CD8}|UpAllNight.Application\\UpAllNight.Application.csproj|solutionrelative:upallnight.application\\validators\\registervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|c:\\backend\\upallnight\\upallnight.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|solutionrelative:upallnight.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3440C23D-9A90-2687-62FC-F66B108AC273}|UpAllNight.Persistence\\UpAllNight.Persistence.csproj|c:\\backend\\upallnight\\upallnight.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3440C23D-9A90-2687-62FC-F66B108AC273}|UpAllNight.Persistence\\UpAllNight.Persistence.csproj|c:\\backend\\upallnight\\upallnight.persistence\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3440C23D-9A90-2687-62FC-F66B108AC273}|UpAllNight.Persistence\\UpAllNight.Persistence.csproj|solutionrelative:upallnight.persistence\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|c:\\backend\\upallnight\\upallnight.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C87F0B8E-E8F7-CF29-D82D-A155D6DEBA0A}|UpAllNight.API\\UpAllNight.API.csproj|solutionrelative:upallnight.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,59 +154,180 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpAllNight.API",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
-              "RelativeDocumentMoniker": "UpAllNight.API\\UpAllNight.API.csproj",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
-              "RelativeToolTip": "UpAllNight.API\\UpAllNight.API.csproj",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAiwAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-27T15:38:42.453Z",
+              "DocumentIndex": 1,
+              "Title": "INotificationHubService.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\Services\\INotificationHubService.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Infrastructure\\Services\\INotificationHubService.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\Services\\INotificationHubService.cs",
+              "RelativeToolTip": "UpAllNight.Infrastructure\\Services\\INotificationHubService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T18:23:47.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpAllNight.Infrastructure",
+              "DocumentIndex": 6,
+              "Title": "UpAllNight.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj",
               "RelativeDocumentMoniker": "UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj",
               "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj",
               "RelativeToolTip": "UpAllNight.Infrastructure\\UpAllNight.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-27T15:21:47.673Z",
+              "WhenOpened": "2026-02-27T15:21:47.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpAllNight.Domain.csproj",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Domain\\UpAllNight.Domain.csproj",
+              "RelativeDocumentMoniker": "UpAllNight.Domain\\UpAllNight.Domain.csproj",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Domain\\UpAllNight.Domain.csproj",
+              "RelativeToolTip": "UpAllNight.Domain\\UpAllNight.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-27T15:39:26.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpAllNight.Persistence.csproj",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
+              "RelativeDocumentMoniker": "UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
+              "RelativeToolTip": "UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-27T15:27:25.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
+              "RelativeToolTip": "UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwJMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T14:58:37.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UpAllNight.Persistence",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
-              "RelativeDocumentMoniker": "UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
-              "RelativeToolTip": "UpAllNight.Persistence\\UpAllNight.Persistence.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwA4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-27T15:27:25.417Z",
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\Hubs\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Infrastructure\\Hubs\\NotificationHub.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\Hubs\\NotificationHub.cs",
+              "RelativeToolTip": "UpAllNight.Infrastructure\\Hubs\\NotificationHub.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T18:19:01.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Program.cs",
+              "RelativeDocumentMoniker": "UpAllNight.API\\Program.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Program.cs",
+              "RelativeToolTip": "UpAllNight.API\\Program.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAMwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T15:05:03.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\appsettings.json",
+              "RelativeDocumentMoniker": "UpAllNight.API\\appsettings.json",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.API\\appsettings.json",
+              "RelativeToolTip": "UpAllNight.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-27T14:45:31.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpAllNight.Application.csproj",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\UpAllNight.Application.csproj",
+              "RelativeDocumentMoniker": "UpAllNight.Application\\UpAllNight.Application.csproj",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\UpAllNight.Application.csproj",
+              "RelativeToolTip": "UpAllNight.Application\\UpAllNight.Application.csproj",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-27T15:22:06.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpAllNight.API.csproj",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
+              "RelativeDocumentMoniker": "UpAllNight.API\\UpAllNight.API.csproj",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.API\\UpAllNight.API.csproj",
+              "RelativeToolTip": "UpAllNight.API\\UpAllNight.API.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-27T15:38:42.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConversationService.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Conversations\\Services\\ConversationService.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Conversations\\Services\\ConversationService.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Conversations\\Services\\ConversationService.cs",
+              "RelativeToolTip": "UpAllNight.Application\\Features\\Conversations\\Services\\ConversationService.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAiwLgAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:45:18.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "UpAllNight.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T15:16:55.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MessageService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Messages\\Services\\MessageService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Messages\\Services\\MessageService.cs",
               "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Messages\\Services\\MessageService.cs",
               "RelativeToolTip": "UpAllNight.Application\\Features\\Messages\\Services\\MessageService.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAArwF0AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:59:27.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:59:27.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Interfaces\\Services\\IFileService.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Application\\Interfaces\\Services\\IFileService.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Interfaces\\Services\\IFileService.cs",
+              "RelativeToolTip": "UpAllNight.Application\\Interfaces\\Services\\IFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:40:21.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "RealtimeService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\Services\\RealtimeService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Infrastructure\\Services\\RealtimeService.cs",
@@ -198,51 +335,23 @@
               "RelativeToolTip": "UpAllNight.Infrastructure\\Services\\RealtimeService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAnwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:51:46.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:51:46.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
-              "RelativeToolTip": "UpAllNight.Application\\Features\\Notifications\\Services\\NotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
+              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
+              "RelativeToolTip": "UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAArwFMAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:58:37.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:02:58.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpAllNight.Application",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\UpAllNight.Application.csproj",
-              "RelativeDocumentMoniker": "UpAllNight.Application\\UpAllNight.Application.csproj",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\UpAllNight.Application.csproj",
-              "RelativeToolTip": "UpAllNight.Application\\UpAllNight.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-27T15:22:06.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UpAllNight.Domain",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Domain\\UpAllNight.Domain.csproj",
-              "RelativeDocumentMoniker": "UpAllNight.Domain\\UpAllNight.Domain.csproj",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Domain\\UpAllNight.Domain.csproj",
-              "RelativeToolTip": "UpAllNight.Domain\\UpAllNight.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-27T15:39:26.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "IRealtimeService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Interfaces\\Services\\IRealtimeService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Interfaces\\Services\\IRealtimeService.cs",
@@ -250,12 +359,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Interfaces\\Services\\IRealtimeService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAgwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:51:20.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:51:20.003Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "NotificationHub.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Hubs\\NotificationHub.cs",
               "RelativeDocumentMoniker": "UpAllNight.API\\Hubs\\NotificationHub.cs",
@@ -263,12 +371,11 @@
               "RelativeToolTip": "UpAllNight.API\\Hubs\\NotificationHub.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:24:11.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:24:11.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Auth\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Auth\\Services\\AuthService.cs",
@@ -276,12 +383,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Features\\Auth\\Services\\AuthService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAnwBQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:59:35.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:59:35.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "AdminService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Admin\\Services\\AdminService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Admin\\Services\\AdminService.cs",
@@ -289,12 +395,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Features\\Admin\\Services\\AdminService.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAnwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:31:54.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:31:54.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Common\\Result.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Common\\Result.cs",
@@ -302,12 +407,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Common\\Result.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAowEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:36:54.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:36:54.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "UpAllNight.API\\Hubs\\ChatHub.cs",
@@ -315,12 +419,11 @@
               "RelativeToolTip": "UpAllNight.API\\Hubs\\ChatHub.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:01:46.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:01:46.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Infrastructure\\Services\\FileService.cs",
@@ -328,25 +431,11 @@
               "RelativeToolTip": "UpAllNight.Infrastructure\\Services\\FileService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAnwAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:05:55.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:05:55.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
-              "RelativeToolTip": "UpAllNight.Application\\Features\\Users\\Services\\UserService.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAnwFIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:02:58.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "IChatNotificationService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Interfaces\\Services\\IChatNotificationService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Interfaces\\Services\\IChatNotificationService.cs",
@@ -354,12 +443,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Interfaces\\Services\\IChatNotificationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:33:38.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:33:38.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "UpAllNight.Infrastructure\\DependencyInjection.cs",
@@ -367,25 +455,11 @@
               "RelativeToolTip": "UpAllNight.Infrastructure\\DependencyInjection.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:17:23.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:17:23.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "UpAllNight.Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "UpAllNight.Application\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:16:55.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "RegisterValidator.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Validators\\RegisterValidator.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Validators\\RegisterValidator.cs",
@@ -393,25 +467,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Validators\\RegisterValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:27:14.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:27:14.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Program.cs",
-              "RelativeDocumentMoniker": "UpAllNight.API\\Program.cs",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Program.cs",
-              "RelativeToolTip": "UpAllNight.API\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAArwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:05:03.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "UpAllNight.Persistence\\DependencyInjection.cs",
@@ -419,12 +479,11 @@
               "RelativeToolTip": "UpAllNight.Persistence\\DependencyInjection.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:54:51.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:54:51.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "UpAllNight.API\\Middlewares\\ExceptionMiddleware.cs",
@@ -432,12 +491,11 @@
               "RelativeToolTip": "UpAllNight.API\\Middlewares\\ExceptionMiddleware.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAkwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:12:00.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:12:00.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "AuthDTOs.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Features\\Auth\\DTOs\\AuthDTOs.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Features\\Auth\\DTOs\\AuthDTOs.cs",
@@ -445,12 +503,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Features\\Auth\\DTOs\\AuthDTOs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T15:00:29.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T15:00:29.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Application\\Interfaces\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "UpAllNight.Application\\Interfaces\\Services\\IAuthService.cs",
@@ -458,12 +515,11 @@
               "RelativeToolTip": "UpAllNight.Application\\Interfaces\\Services\\IAuthService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAIA0wBQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:58:08.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:58:08.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "UpAllNight.Persistence\\Repositories\\GenericRepository.cs",
@@ -471,12 +527,11 @@
               "RelativeToolTip": "UpAllNight.Persistence\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAkwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:55:00.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:55:00.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Persistence\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "UpAllNight.Persistence\\UnitOfWork\\UnitOfWork.cs",
@@ -484,12 +539,11 @@
               "RelativeToolTip": "UpAllNight.Persistence\\UnitOfWork\\UnitOfWork.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAcwCUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:54:52.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:54:52.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.Domain\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "UpAllNight.Domain\\Interfaces\\IUnitOfWork.cs",
@@ -497,21 +551,7 @@
               "RelativeToolTip": "UpAllNight.Domain\\Interfaces\\IUnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T14:49:25.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Backend\\UpAllNight\\UpAllNight.API\\appsettings.json",
-              "RelativeDocumentMoniker": "UpAllNight.API\\appsettings.json",
-              "ToolTip": "C:\\Backend\\UpAllNight\\UpAllNight.API\\appsettings.json",
-              "RelativeToolTip": "UpAllNight.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-27T14:45:31.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-27T14:49:25.113Z"
             }
           ]
         }
