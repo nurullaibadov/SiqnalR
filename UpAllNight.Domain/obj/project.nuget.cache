@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qeIn/2pJnAw=",
+  "success": true,
+  "projectFilePath": "C:\\Backend\\UpAllNight\\UpAllNight.Domain\\UpAllNight.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ibadn\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="UpAllNight.API/UpAllNight.API.csproj" />
+  <Project Path="UpAllNight.Application/UpAllNight.Application.csproj" />
+  <Project Path="UpAllNight.Domain/UpAllNight.Domain.csproj" />
+  <Project Path="UpAllNight.Infrastructure/UpAllNight.Infrastructure.csproj" />
+  <Project Path="UpAllNight.Persistence/UpAllNight.Persistence.csproj" />
+</Solution>
