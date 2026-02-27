@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using UpAllNight.Application.Common;
 using UpAllNight.Application.Features.Messages.DTOs;
@@ -30,14 +30,14 @@ namespace UpAllNight.Application.Features.Messages.Services
         private readonly IUnitOfWork _uow;
         private readonly IMapper _mapper;
         private readonly IFileService _fileService;
-        private readonly IHubContext<ChatHub> _chatHub;
+        private readonly IChatNotificationService _chatNotifier;
 
-        public MessageService(IUnitOfWork uow, IMapper mapper, IFileService fileService, IHubContext<ChatHub> chatHub)
+        public MessageService(IUnitOfWork uow, IMapper mapper, IFileService fileService, IChatNotificationService chatNotifier)
         {
             _uow = uow;
             _mapper = mapper;
             _fileService = fileService;
-            _chatHub = chatHub;
+            _chatNotifier = chatNotifier;
         }
 
         public async Task<Result<MessageDto>> SendMessageAsync(Guid senderId, SendMessageRequestDto request, IFormFileCollection? files, CancellationToken ct = default)
@@ -45,7 +45,6 @@ namespace UpAllNight.Application.Features.Messages.Services
             if (!await _uow.Conversations.IsUserParticipantAsync(request.ConversationId, senderId, ct))
                 return Result<MessageDto>.Forbidden("Bu konuşmada mesaj gönderme yetkiniz yok.");
 
-            // Engel kontrolü (private conversation için)
             var conv = await _uow.Conversations.GetByIdAsync(request.ConversationId, ct);
             if (conv == null) return Result<MessageDto>.NotFound("Konuşma bulunamadı.");
 
@@ -68,7 +67,6 @@ namespace UpAllNight.Application.Features.Messages.Services
 
             await _uow.Messages.AddAsync(message, ct);
 
-            // Dosya ekleri
             if (files != null && files.Count > 0)
             {
                 foreach (var file in files)
@@ -96,19 +94,15 @@ namespace UpAllNight.Application.Features.Messages.Services
                     message.Type = GetMessageTypeFromFile(files[0].ContentType);
             }
 
-            // Son mesajı güncelle
             conv.LastMessageId = message.Id;
             await _uow.SaveChangesAsync(ct);
 
-            // Mesajı tam yükle
             var savedMessage = await _uow.Messages.GetByIdAsync(message.Id, ct);
+            var dto = _mapper.Map<MessageDto>(savedMessage ?? message);
 
-            // SignalR ile gönder
-            await _chatHub.Clients
-                .Group($"conversation_{request.ConversationId}")
-                .SendAsync("NewMessage", _mapper.Map<MessageDto>(message), ct);
+            await _chatNotifier.SendMessageAsync(request.ConversationId.ToString(), dto, ct);
 
-            return Result<MessageDto>.Success(_mapper.Map<MessageDto>(savedMessage ?? message), null, 201);
+            return Result<MessageDto>.Success(dto, null, 201);
         }
 
         public async Task<Result<MessageDto>> EditMessageAsync(Guid userId, Guid messageId, EditMessageRequestDto request, CancellationToken ct = default)
@@ -118,7 +112,6 @@ namespace UpAllNight.Application.Features.Messages.Services
             if (message.SenderId != userId) return Result<MessageDto>.Forbidden("Başkasının mesajını düzenleyemezsiniz.");
             if (message.Type != MessageType.Text) return Result<MessageDto>.Failure("Sadece metin mesajları düzenlenebilir.");
 
-            // 15 dakika sınırı
             if ((DateTime.UtcNow - message.CreatedAt).TotalMinutes > 15)
                 return Result<MessageDto>.Failure("Mesaj düzenleme süresi dolmuştur (15 dakika).");
 
@@ -130,9 +123,7 @@ namespace UpAllNight.Application.Features.Messages.Services
             await _uow.SaveChangesAsync(ct);
 
             var dto = _mapper.Map<MessageDto>(message);
-            await _chatHub.Clients
-                .Group($"conversation_{message.ConversationId}")
-                .SendAsync("MessageEdited", dto, ct);
+            await _chatNotifier.MessageEditedAsync(message.ConversationId.ToString(), dto, ct);
 
             return Result<MessageDto>.Success(dto, "Mesaj düzenlendi.");
         }
@@ -146,7 +137,6 @@ namespace UpAllNight.Application.Features.Messages.Services
             {
                 if (message.SenderId != userId)
                 {
-                    // Admin kontrolü
                     var participant = await _uow.Conversations.GetParticipantAsync(message.ConversationId, userId, ct);
                     if (participant?.Role == ParticipantRole.Member)
                         return Result.Failure("Başkasının mesajını silemezsiniz.", 403);
@@ -157,14 +147,11 @@ namespace UpAllNight.Application.Features.Messages.Services
                 message.Content = null;
 
                 await _uow.SaveChangesAsync(ct);
-
-                await _chatHub.Clients
-                    .Group($"conversation_{message.ConversationId}")
-                    .SendAsync("MessageDeleted", new { MessageId = messageId, DeletedForEveryone = true }, ct);
+                await _chatNotifier.MessageDeletedAsync(message.ConversationId.ToString(),
+                    new { MessageId = messageId, DeletedForEveryone = true }, ct);
             }
             else
             {
-                // Sadece kendin için sil (soft delete with user tracking - simplified)
                 if (message.SenderId != userId) return Result.Failure("Sadece kendi mesajlarınızı silebilirsiniz.", 403);
                 message.IsDeleted = true;
                 await _uow.SaveChangesAsync(ct);
@@ -194,7 +181,6 @@ namespace UpAllNight.Application.Features.Messages.Services
 
             await _uow.Messages.AddAsync(forwardedMessage, ct);
 
-            // Ekleri kopyala
             foreach (var att in original.Attachments ?? new List<MessageAttachment>())
             {
                 await _uow.Repository<MessageAttachment>().AddAsync(new MessageAttachment
@@ -216,9 +202,7 @@ namespace UpAllNight.Application.Features.Messages.Services
             await _uow.SaveChangesAsync(ct);
 
             var dto = _mapper.Map<MessageDto>(forwardedMessage);
-            await _chatHub.Clients
-                .Group($"conversation_{request.TargetConversationId}")
-                .SendAsync("NewMessage", dto, ct);
+            await _chatNotifier.SendMessageAsync(request.TargetConversationId.ToString(), dto, ct);
 
             return Result<MessageDto>.Success(dto, null, 201);
         }
@@ -228,29 +212,22 @@ namespace UpAllNight.Application.Features.Messages.Services
             var message = await _uow.Messages.GetByIdAsync(messageId, ct);
             if (message == null) return Result.Failure("Mesaj bulunamadı.", 404);
 
-            // Mevcut reaksiyonu güncelle veya yeni ekle
             var existing = await _uow.Repository<MessageReaction>()
                 .FirstOrDefaultAsync(r => r.MessageId == messageId && r.UserId == userId, ct);
 
             if (existing != null)
-            {
                 existing.Emoji = emoji;
-            }
             else
-            {
                 await _uow.Repository<MessageReaction>().AddAsync(new MessageReaction
                 {
                     MessageId = messageId,
                     UserId = userId,
                     Emoji = emoji
                 }, ct);
-            }
 
             await _uow.SaveChangesAsync(ct);
-
-            await _chatHub.Clients
-                .Group($"conversation_{message.ConversationId}")
-                .SendAsync("MessageReaction", new { MessageId = messageId, UserId = userId, Emoji = emoji }, ct);
+            await _chatNotifier.ReactionAsync(message.ConversationId.ToString(),
+                new { MessageId = messageId, UserId = userId, Emoji = emoji }, ct);
 
             return Result.Success("Reaksiyon eklendi.");
         }
@@ -263,16 +240,12 @@ namespace UpAllNight.Application.Features.Messages.Services
             if (reaction == null) return Result.Failure("Reaksiyon bulunamadı.", 404);
 
             var message = await _uow.Messages.GetByIdAsync(messageId, ct);
-
             await _uow.Repository<MessageReaction>().DeleteAsync(reaction, ct);
             await _uow.SaveChangesAsync(ct);
 
             if (message != null)
-            {
-                await _chatHub.Clients
-                    .Group($"conversation_{message.ConversationId}")
-                    .SendAsync("ReactionRemoved", new { MessageId = messageId, UserId = userId }, ct);
-            }
+                await _chatNotifier.ReactionAsync(message.ConversationId.ToString(),
+                    new { MessageId = messageId, UserId = userId, Removed = true }, ct);
 
             return Result.Success("Reaksiyon kaldırıldı.");
         }
@@ -281,10 +254,8 @@ namespace UpAllNight.Application.Features.Messages.Services
         {
             await _uow.Messages.MarkAsReadAsync(conversationId, userId, ct);
             await _uow.SaveChangesAsync(ct);
-
-            await _chatHub.Clients
-                .Group($"conversation_{conversationId}")
-                .SendAsync("MessagesRead", new { ConversationId = conversationId, UserId = userId }, ct);
+            await _chatNotifier.MessagesReadAsync(conversationId.ToString(),
+                new { ConversationId = conversationId, UserId = userId }, ct);
 
             return Result.Success();
         }

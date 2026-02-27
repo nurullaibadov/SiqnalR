@@ -1,20 +1,30 @@
+using Asp.Versioning;
+using AspNetCoreRateLimit;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Serilog;
+using Serilog.Events;
 using System.Text.Json.Serialization;
-using UpAllNight.Application.Features.Auth.Services;
-using UpAllNight.Application.Interfaces.Services;
+using UpAllNight.API.Hubs;
+using UpAllNight.API.Middlewares;
+using UpAllNight.Application;
 using UpAllNight.Infrastructure;
+using UpAllNight.Persistence;
+using UpAllNight.Persistence.Context;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Serilog
+// ===== SERILOG =====
 Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration)
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
     .Enrich.FromLogContext()
     .CreateLogger();
 
+var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog();
 
-// Controllers
+// ===== CONTROLLERS =====
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -23,55 +33,50 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
     });
 
-// API Versioning
+// ===== API VERSIONING =====
 builder.Services.AddApiVersioning(options =>
 {
     options.DefaultApiVersion = new ApiVersion(1, 0);
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.ReportApiVersions = true;
-});
-
-builder.Services.AddVersionedApiExplorer(options =>
+}).AddApiExplorer(options =>
 {
     options.GroupNameFormat = "'v'VVV";
     options.SubstituteApiVersionInUrl = true;
 });
 
-// CORS
+// ===== CORS =====
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? new[] { "*" };
-        policy.WithOrigins(allowedOrigins)
+        policy.AllowAnyOrigin()
               .AllowAnyMethod()
-              .AllowAnyHeader()
-              .AllowCredentials();
+              .AllowAnyHeader();
     });
 });
 
-// Rate Limiting
+// ===== RATE LIMITING =====
 builder.Services.AddMemoryCache();
 builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
 builder.Services.AddInMemoryRateLimiting();
 builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 
-// SignalR
+// ===== SIGNALR =====
 builder.Services.AddSignalR(options =>
 {
     options.EnableDetailedErrors = builder.Environment.IsDevelopment();
 });
 
-// Swagger
+// ===== SWAGGER =====
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "MessagingApp API",
+        Title = "UpAllNight API",
         Version = "v1",
-        Description = "WhatsApp benzeri mesajlaşma API'si",
-        Contact = new OpenApiContact { Name = "MessagingApp Team", Email = "info@messagingapp.com" }
+        Description = "Messaging API"
     });
 
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -81,7 +86,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "JWT Authorization header. Format: 'Bearer {token}'"
+        Description = "JWT Authorization. Format: 'Bearer {token}'"
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -89,48 +94,41 @@ builder.Services.AddSwaggerGen(options =>
         {
             new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
             },
             Array.Empty<string>()
         }
     });
-
-    options.ExampleFilters();
-    options.EnableAnnotations();
 });
 
-builder.Services.AddSwaggerExamplesFromAssemblyOf<Program>();
-
-// Katmanlar
+// ===== KATMANLAR =====
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddPersistence(builder.Configuration);
 
-// Auth Service
-builder.Services.AddScoped<IAuthService, AuthService>();
-
-// Health Checks
+// ===== HEALTH CHECKS =====
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
-// Middleware Pipeline
+// ===== MIDDLEWARE =====
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "MessagingApp API v1");
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "UpAllNight API v1");
         options.RoutePrefix = "swagger";
-        options.DisplayRequestDuration();
     });
-    app.UseDeveloperExceptionPage();
 }
 
 app.UseIpRateLimiting();
 app.UseSerilogRequestLogging();
 app.UseMiddleware<ExceptionMiddleware>();
-app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseCors("AllowAll");
@@ -141,18 +139,18 @@ app.MapHub<ChatHub>("/hubs/chat");
 app.MapHub<NotificationHub>("/hubs/notification");
 app.MapHealthChecks("/health");
 
-// Database Migration (otomatik)
+// ===== DATABASE MIGRATE =====
 using (var scope = app.Services.CreateScope())
 {
     try
     {
-        var db = scope.ServiceProvider.GetRequiredService<MessagingApp.Persistence.Context.AppDbContext>();
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
         db.Database.Migrate();
-        Log.Information("Database migration completed successfully.");
+        Log.Information("Database migration tamamlandı.");
     }
     catch (Exception ex)
     {
-        Log.Fatal(ex, "Database migration failed.");
+        Log.Fatal(ex, "Database migration başarısız.");
     }
 }
 

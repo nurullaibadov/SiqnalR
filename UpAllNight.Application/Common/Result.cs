@@ -52,5 +52,17 @@ namespace UpAllNight.Application.Common
 
         public static Result Failure(List<string> errors, int statusCode = 400)
             => new() { IsSuccess = false, Errors = errors, StatusCode = statusCode };
+
+        public static Result NotFound(string message = "Resource not found")
+    => new() { IsSuccess = false, Errors = new List<string> { message }, StatusCode = 404 };
+
+        public static Result Unauthorized(string message = "Unauthorized")
+            => new() { IsSuccess = false, Errors = new List<string> { message }, StatusCode = 401 };
+
+        public static Result Forbidden(string message = "Forbidden")
+            => new() { IsSuccess = false, Errors = new List<string> { message }, StatusCode = 403 };
     }
+
+
+
 }

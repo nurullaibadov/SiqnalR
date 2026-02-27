@@ -59,9 +59,9 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "BCrypt.Net-Next": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[4.1.0, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -75,11 +75,11 @@
               "target": "Package",
               "version": "[12.2.0, )"
             },
-            "Microsoft.AspNetCore.Http.Abstractions": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[8.0.0, )"
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -239,7 +239,19 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -250,6 +262,10 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.16.0, )"
             },
             "MimeKit": {
               "target": "Package",

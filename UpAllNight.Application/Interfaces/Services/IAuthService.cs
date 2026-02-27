@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UpAllNight.Application.Common;
+using UpAllNight.Application.Features.Auth.DTOs;
 
 namespace UpAllNight.Application.Interfaces.Services
 {

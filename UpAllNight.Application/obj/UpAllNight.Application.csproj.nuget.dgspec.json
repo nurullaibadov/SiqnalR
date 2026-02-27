@@ -59,9 +59,9 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "BCrypt.Net-Next": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[4.1.0, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -75,11 +75,11 @@
               "target": "Package",
               "version": "[12.2.0, )"
             },
-            "Microsoft.AspNetCore.Http.Abstractions": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[8.0.0, )"
             },
-            "Microsoft.Extensions.Logging.Abstractions": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
             }

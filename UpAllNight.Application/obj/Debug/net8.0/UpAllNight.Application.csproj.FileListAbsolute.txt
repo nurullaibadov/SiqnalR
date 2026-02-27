@@ -1,0 +1,6 @@
+C:\Backend\UpAllNight\UpAllNight.Application\obj\Debug\net8.0\UpAllNight.Application.csproj.AssemblyReference.cache
+C:\Backend\UpAllNight\UpAllNight.Application\obj\Debug\net8.0\UpAllNight.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backend\UpAllNight\UpAllNight.Application\obj\Debug\net8.0\UpAllNight.Application.AssemblyInfoInputs.cache
+C:\Backend\UpAllNight\UpAllNight.Application\obj\Debug\net8.0\UpAllNight.Application.AssemblyInfo.cs
+C:\Backend\UpAllNight\UpAllNight.Application\obj\Debug\net8.0\UpAllNight.Application.csproj.CoreCompileInputs.cache
+C:\Backend\UpAllNight\UpAllNight.Application\obj\Debug\net8.0\UpAllNight.Application.sourcelink.json

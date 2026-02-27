@@ -1,45 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace UpAllNight.Application.Features.Auth.DTOs
 {
-    public record RegisterRequestDto(
-       [Required][StringLength(50, MinimumLength = 3)] string UserName,
-       [Required][EmailAddress] string Email,
-       [Required][Phone] string PhoneNumber,
-       [Required][StringLength(100, MinimumLength = 8)] string Password,
-       [Required][Compare(nameof(Password))] string ConfirmPassword,
-       string? FirstName,
-       string? LastName
-   );
+    public class RegisterRequestDto
+    {
+        [Required]
+        [StringLength(50, MinimumLength = 3)]
+        public string UserName { get; set; } = string.Empty;
 
-    public record LoginRequestDto(
-        [Required] string EmailOrUserName,
-        [Required] string Password,
-        bool RememberMe = false
-    );
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
 
-    public record ResetPasswordRequestDto(
-        [Required] string Token,
-        [Required][EmailAddress] string Email,
-        [Required][StringLength(100, MinimumLength = 8)] string NewPassword,
-        [Required][Compare(nameof(NewPassword))] string ConfirmPassword
-    );
+        [Required]
+        [Phone]
+        public string PhoneNumber { get; set; } = string.Empty;
 
-    public record ChangePasswordRequestDto(
-        [Required] string CurrentPassword,
-        [Required][StringLength(100, MinimumLength = 8)] string NewPassword,
-        [Required][Compare(nameof(NewPassword))] string ConfirmPassword
-    );
+        [Required]
+        [StringLength(100, MinimumLength = 8)]
+        public string Password { get; set; } = string.Empty;
 
-    public record TwoFactorLoginDto(
-        [Required] string UserId,
-        [Required] string Code
-    );
+        [Required]
+        [Compare(nameof(Password))]
+        public string ConfirmPassword { get; set; } = string.Empty;
+
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+    }
+
+    public class LoginRequestDto
+    {
+        [Required]
+        public string EmailOrUserName { get; set; } = string.Empty;
+
+        [Required]
+        public string Password { get; set; } = string.Empty;
+
+        public bool RememberMe { get; set; } = false;
+    }
+
+    public class ResetPasswordRequestDto
+    {
+        [Required]
+        public string Token { get; set; } = string.Empty;
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100, MinimumLength = 8)]
+        public string NewPassword { get; set; } = string.Empty;
+
+        [Required]
+        [Compare(nameof(NewPassword))]
+        public string ConfirmPassword { get; set; } = string.Empty;
+    }
+
+    public class ChangePasswordRequestDto
+    {
+        [Required]
+        public string CurrentPassword { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100, MinimumLength = 8)]
+        public string NewPassword { get; set; } = string.Empty;
+
+        [Required]
+        [Compare(nameof(NewPassword))]
+        public string ConfirmPassword { get; set; } = string.Empty;
+    }
+
+    public class TwoFactorLoginDto
+    {
+        [Required]
+        public string UserId { get; set; } = string.Empty;
+
+        [Required]
+        public string Code { get; set; } = string.Empty;
+    }
 
     public class AuthResponseDto
     {
@@ -55,5 +94,9 @@ namespace UpAllNight.Application.Features.Auth.DTOs
         public bool RequiresTwoFactor { get; set; } = false;
     }
 
-    public record RefreshTokenRequestDto([Required] string RefreshToken);
+    public class RefreshTokenRequestDto
+    {
+        [Required]
+        public string RefreshToken { get; set; } = string.Empty;
+    }
 }

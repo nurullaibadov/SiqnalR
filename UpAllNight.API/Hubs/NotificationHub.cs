@@ -2,8 +2,11 @@
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
+using UpAllNight.API.Hubs;
+
 
 namespace UpAllNight.API.Hubs
+
 {
     [Authorize]
     public class NotificationHub : Hub

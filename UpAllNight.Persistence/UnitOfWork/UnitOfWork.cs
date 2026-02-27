@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UpAllNight.Domain.Common;
 using UpAllNight.Domain.Interfaces;
 using UpAllNight.Persistence.Context;
 using UpAllNight.Persistence.Repositories;
@@ -15,7 +16,6 @@ namespace UpAllNight.Persistence.UnitOfWork
         private readonly AppDbContext _context;
         private IDbContextTransaction? _transaction;
         private readonly Dictionary<Type, object> _repositories = new();
-
         private IUserRepository? _users;
         private IConversationRepository? _conversations;
         private IMessageRepository? _messages;
@@ -29,11 +29,11 @@ namespace UpAllNight.Persistence.UnitOfWork
         public IConversationRepository Conversations => _conversations ??= new ConversationRepository(_context);
         public IMessageRepository Messages => _messages ??= new MessageRepository(_context);
 
-        public IGenericRepository<T> Repository<T>() where T : class
+        public IGenericRepository<T> Repository<T>() where T : BaseEntity // ✅
         {
             var type = typeof(T);
             if (!_repositories.ContainsKey(type))
-                _repositories[type] = new GenericRepository<Domain.Common.BaseEntity>(_context);
+                _repositories[type] = new GenericRepository<T>(_context); // ✅
             return (IGenericRepository<T>)_repositories[type];
         }
 

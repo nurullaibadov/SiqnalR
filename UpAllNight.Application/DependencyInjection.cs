@@ -1,11 +1,7 @@
-﻿using FluentValidation;
+﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using UpAllNight.Application.Features.Admin.Services;
 using UpAllNight.Application.Features.Auth.Services;
 using UpAllNight.Application.Features.Conversations.Services;
@@ -20,7 +16,10 @@ namespace UpAllNight.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            // AutoMapper
+            services.AddAutoMapper(cfg => { }, Assembly.GetExecutingAssembly());
+
+            // FluentValidation
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             // Services

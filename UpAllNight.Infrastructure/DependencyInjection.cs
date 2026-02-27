@@ -1,10 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.Threading.Tasks;
 using UpAllNight.Application.Interfaces.Services;
 using UpAllNight.Infrastructure.Services;
 
@@ -14,7 +12,6 @@ namespace UpAllNight.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            // Services
             services.AddScoped<IJwtService, JwtService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IFileService, FileService>();
@@ -22,7 +19,6 @@ namespace UpAllNight.Infrastructure
             services.AddHttpContextAccessor();
             services.AddScoped<ICurrentUserService, CurrentUserService>();
 
-            // JWT Authentication
             var jwtSettings = configuration.GetSection("JwtSettings");
             services.AddAuthentication(options =>
             {
@@ -42,8 +38,6 @@ namespace UpAllNight.Infrastructure
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.Zero
                 };
-
-                // SignalR için token support
                 options.Events = new JwtBearerEvents
                 {
                     OnMessageReceived = context =>
@@ -51,15 +45,12 @@ namespace UpAllNight.Infrastructure
                         var accessToken = context.Request.Query["access_token"];
                         var path = context.HttpContext.Request.Path;
                         if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hubs"))
-                        {
                             context.Token = accessToken;
-                        }
                         return Task.CompletedTask;
                     }
                 };
             });
 
-            // Redis Cache
             var redisSettings = configuration.GetSection("RedisSettings");
             if (!string.IsNullOrEmpty(redisSettings["ConnectionString"]))
             {

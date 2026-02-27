@@ -1,0 +1,13 @@
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.csproj.AssemblyReference.cache
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.AssemblyInfoInputs.cache
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.AssemblyInfo.cs
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.csproj.CoreCompileInputs.cache
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.sourcelink.json
+C:\Backend\UpAllNight\UpAllNight.Domain\bin\Debug\net8.0\UpAllNight.Domain.deps.json
+C:\Backend\UpAllNight\UpAllNight.Domain\bin\Debug\net8.0\UpAllNight.Domain.dll
+C:\Backend\UpAllNight\UpAllNight.Domain\bin\Debug\net8.0\UpAllNight.Domain.pdb
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.dll
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\refint\UpAllNight.Domain.dll
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\UpAllNight.Domain.pdb
+C:\Backend\UpAllNight\UpAllNight.Domain\obj\Debug\net8.0\ref\UpAllNight.Domain.dll

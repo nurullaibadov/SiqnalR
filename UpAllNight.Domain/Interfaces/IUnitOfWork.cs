@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UpAllNight.Domain.Common;
 
 namespace UpAllNight.Domain.Interfaces
 {
@@ -11,7 +12,7 @@ namespace UpAllNight.Domain.Interfaces
         IUserRepository Users { get; }
         IConversationRepository Conversations { get; }
         IMessageRepository Messages { get; }
-        IGenericRepository<T> Repository<T>() where T : class;
+        IGenericRepository<T> Repository<T>() where T : BaseEntity; // ✅
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
         Task BeginTransactionAsync(CancellationToken cancellationToken = default);
         Task CommitTransactionAsync(CancellationToken cancellationToken = default);
